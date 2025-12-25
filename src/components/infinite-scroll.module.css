@@ -1,0 +1,27 @@
+.outerCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #ccc;
+  width: 300px;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 10px;
+  border-radius:10px
+}
+
+.likeSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.likeSection span {
+  display: flex;
+}

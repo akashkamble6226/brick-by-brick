@@ -1,0 +1,36 @@
+.priceFilter {
+  width: 220px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.priceFilter h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.priceInputs {
+  display: "flex";
+  gap: 8px;
+  margin-bottom: "10px";
+}
+
+.priceInputs input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.priceFilter button {
+  width: 100%;
+  padding: 6px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  cursor: pointer;
+  margin-top:10px
+}

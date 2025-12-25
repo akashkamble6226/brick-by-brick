@@ -1,0 +1,17 @@
+.paginationBox {
+  display: flex;
+  flex-direction: row;
+  border:1px solid #ccc;
+  justify-content:center;
+  align-items:center;
+}
+
+.singlePage {
+  display: flex;
+  padding:1px;
+  margin:1px;
+  flex-direction: row;
+  gap:10px;
+  border:1px solid #cac;
+  cursor:pointer
+}
