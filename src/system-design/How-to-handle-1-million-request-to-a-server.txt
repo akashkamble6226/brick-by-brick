@@ -1,0 +1,35 @@
+Question →
+Your server limit is 10k requests per second, and suddenly traffic spikes to 100k requests per second.
+How will you handle it?
+
+Option 1 → Rate Limiting
+
+We will apply rate limiting based on IP / user / API key.
+
+For example:
+We can limit a single IP or user to a fixed number of requests per second/minute.
+This helps prevent script-based attacks, bots, brute-force attempts, and protects the server from being overloaded by abusive traffic.
+
+Option 2 → Caching (CDN)
+
+We will use CDN (Content Delivery Network).
+
+Multiple CDN edge servers will be placed in front of the main server.
+When a request comes, it first hits the CDN.
+If the requested data is already cached, the response is served directly from the CDN, so the request does not reach the main server, significantly reducing load.
+
+Option 3 → Load Balancing
+
+We will create multiple replicas of the server.
+
+A load balancer will sit on top and distribute incoming requests across these servers based on load (round-robin, least connections, etc.).
+This ensures no single server becomes a bottleneck and traffic is handled efficiently.
+
+Option 4 → Auto Scaling
+
+We will enable auto scaling for the servers.
+
+For example, if the system is designed to handle 10k requests per second, we can set a threshold (e.g., 9,500 requests/sec).
+When traffic crosses this limit, new server instances are automatically added, increasing capacity (e.g., 20k, 30k requests/sec).
+
+This must be configured with upper limits, because uncontrolled auto scaling can cause rapid cost spikes.
