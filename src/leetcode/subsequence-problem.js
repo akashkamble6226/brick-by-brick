@@ -9,19 +9,19 @@ const firstString = "abgtu";
 const secondString = "atu";
 
 function checkHasSubsequence() {
-  let sec = "";
+  let j = 0;
   for (let i = 0; i < firstString.length; i++) {
-    for (let j = 0; j < secondString.length; j++) {
-      if (firstString[i] === secondString[j]) {
-        sec += firstString[i];
-        i++;
-        j++;
-      }
+    if (firstString[i] === secondString[j]) {
+      j++;
     }
   }
-  console.log("sec", sec);
-  return sec === secondString;
+  return j === secondString.length;
 }
 
 console.log(checkHasSubsequence());
-//not working
+
+
+// Time & Space Complexity 🚀
+// Time: O(n)
+// Space: O(1)
+// Much better than nested loops.
