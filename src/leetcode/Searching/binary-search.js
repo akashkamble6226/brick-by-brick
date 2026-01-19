@@ -26,3 +26,9 @@ function doBinarySearch(ar, t) {
 }
 
 console.log(doBinarySearch(arr, target));
+
+// Time & Space Complexity (Interview MUST)
+
+// Time: O(log n)
+
+// Space: O(1) (iterative version)
