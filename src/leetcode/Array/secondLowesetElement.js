@@ -4,6 +4,8 @@
 // if the array is gaurenteed to be distinct , then
 // use sort and return arr[1] elemtn
 
+// think like this - “When a new best friend arrives, the old best friend doesn’t disappear — it moves to second place.”
+
 const arr = [5, 2, 8, 1, 3];
 
 // const sor = arr.sort((a, b) => a - b);
