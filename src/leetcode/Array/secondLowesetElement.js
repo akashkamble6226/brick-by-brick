@@ -19,7 +19,7 @@ function findSecondLowest(arr) {
   for (let i = 0; i < arr.length; i++) {
     let current = arr[i];
     if (current < lowest) {
-      secondLowest = lowest;// this has to first
+      secondLowest = lowest; // this has to first
       lowest = current;
     } else if (current > lowest && current < secondLowest) {
       secondLowest = current;
@@ -29,4 +29,20 @@ function findSecondLowest(arr) {
   return secondLowest;
 }
 
-console.log(findSecondLowest(arr));
+const findSecondHighest = (arr) => {
+  let highest = -Infinity; // magic is here
+  let secondHighest = -Infinity; //// magic is here
+  for (let i = 0; i < arr.length; i++) {
+    let current = arr[i];
+    if (current > highest) {
+      secondHighest = highest;
+      highest = current;
+    } else if (current < highest && current > secondHighest) {
+      secondHighest = current;
+    }
+  }
+
+  return secondHighest;
+};
+
+console.log(findSecondHighest(arr));
