@@ -78,6 +78,6 @@ for (var i = 0; i < 3; i++) {
 console.log("the var", i); // 3
 
 for (let i = 0; i < 3; i++) {
-  i;
+  console.log("inside let", i);
 }
-console.log("the let", i); // ReferenceError: i is not defined
+console.log("the let", i); // 3
