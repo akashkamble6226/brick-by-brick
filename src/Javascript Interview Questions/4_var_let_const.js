@@ -30,6 +30,7 @@ console.log(x); // 5 😬
 // Interview questions
 const obj = { type: "human" };
 obj.type = "Animal";
+console.log("The obj", obj);
 // obj = {} 👉 const protects the reference, not the object.
 
 //Hoisting comparision

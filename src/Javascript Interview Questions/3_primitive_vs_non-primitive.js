@@ -84,7 +84,7 @@ let bccv = { pro: true };
 
 console.log("Non-primitiv", abcc === bccv);
 
-// 👉 Because different references, even if content is same.
+// 👉 Because different references, even if content is same.  
 
 // Interview Question 2
 

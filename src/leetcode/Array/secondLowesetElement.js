@@ -6,7 +6,7 @@
 
 // think like this - “When a new best friend arrives, the old best friend doesn’t disappear — it moves to second place.”
 
-const arr = [5, 2, 8, 1, 3];
+const arr = [10, 5, 8, 20, 20, 3];
 
 // const sor = arr.sort((a, b) => a - b);
 // console.log(sor[1]);
