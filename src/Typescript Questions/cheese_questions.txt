@@ -1,0 +1,48 @@
+Problem Statement (In Words)
+
+Software Cheesemongers is a company that builds software for small dairy shops in Italy. 
+These shops sell different types of cheeses, and the system keeps track of each cheese in the inventory.
+Each cheese item has two properties:
+validByDays – the number of days remaining before the cheese expires.
+quality – the value or freshness of the cheese.
+Every day the system updates all cheeses in the inventory by adjusting their validByDays and quality values according to specific rules.
+
+General Rules
+
+1) At the end of each day, the validByDays value of most cheeses decreases by 1.
+
+2) The quality of most cheeses decreases by 1 each day as they get closer to expiration.
+
+3) Once the validByDays becomes less than 0 (the cheese has expired), the quality decreases five times faster than before.
+
+4) The quality of a cheese can never be negative.
+
+5) The quality of a cheese can never exceed 100.
+
+6) Special Cheese Types
+
+Some cheeses behave differently:
+
+#Parmigiano Regiano
+
+This cheese improves with age.
+Instead of decreasing, its quality increases over time.
+
+#Caciocavallo Podolico
+
+This is a legendary cheese.
+Its quality never decreases, and its validByDays value does not change.
+
+#Tasting with Chef Massimo
+
+This represents a special cheese-tasting event.
+As the event date approaches, the quality increases.
+When there are 14 days or fewer, the quality increases faster.
+When there are 7 days or fewer, it increases even faster.
+After the event is over (validByDays < 0), the quality drops to 0.
+
+New Requirement
+
+The system must now support a new cheese called Ricotta.
+Ricotta spoils faster than normal cheeses, so:
+Its quality decreases three times faster than normal cheeses.
