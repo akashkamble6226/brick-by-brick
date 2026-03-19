@@ -45,4 +45,4 @@ const findSecondHighest = (arr) => {
   return secondHighest;
 };
 
-console.log(findSecondHighest(arr));
+console.log(findSecondLowest(arr));

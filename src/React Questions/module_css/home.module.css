@@ -1,0 +1,22 @@
+.backDiv {
+  background-color: #a3a3a3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 10px;
+  /* display: flex;
+  flex-direction:row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; */
+  height: 100px;
+}
+
+.box {
+  width: 50;
+  height: 50;
+  background: lightblue;
+  padding: 20px;
+}

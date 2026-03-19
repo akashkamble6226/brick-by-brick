@@ -1,38 +1,27 @@
-import { solution } from "./codility-sample";
-
+import { useState } from "react";
+import Counter from "./React Questions/1_useState";
+import ClassCounter from "./React Questions/3_class_based_component";
+import Student from "./React Questions/3_class_based_component";
+import UncontrComp from "./React Questions/4_controlled_components_vs_uncontrolled_components";
+import ControComponents from "./React Questions/4_controlled_components_vs_uncontrolled_components";
+import ContextChild, { UserContext } from "./React Questions/5_context_api";
+import HookUseEffect from "./React Questions/6_useEffect";
+import Home from "./React Questions/module_css/home";
+import TheUseLayEff from "./React Questions/7_useLayoutEffect";
+import TheUseReducer from "./React Questions/8_useReducer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RouterDomHome, {
+  RouterDomHome2,
+  RouterDomHome3,
+} from "./React Questions/9_react_router";
+import { Provider } from "react-redux";
+import { store } from "./React Questions/Redux/store";
 function App() {
-  const testCases = [
-    { input: [1, 3, 6, 4, 1, 2], expected: 5 },
-    { input: [1, 2, 3], expected: 4 },
-    { input: [-1, -3], expected: 1 },
-  ];
-
+  const [user, setUser] = useState("Akash");
   return (
-    <main style={{ fontFamily: "Arial, sans-serif", padding: "24px", lineHeight: 1.6 }}>
-      <h1>Codility Sample Test</h1>
-      <p>Smallest positive integer missing from each array:</p>
-
-      <ul>
-        {testCases.map(({ input, expected }) => {
-          const actual = solution(input);
-          const isMatch = actual === expected;
-
-          return (
-            <li key={input.join(",")} style={{ marginBottom: "12px" }}>
-              <div>
-                <strong>Input:</strong> [{input.join(", ")}]
-              </div>
-              <div>
-                <strong>Output:</strong> {actual}
-              </div>
-              <div>
-                <strong>Expected:</strong> {expected} ({isMatch ? "PASS" : "FAIL"})
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-    </main>
+    <Provider store={store}>
+      <RouterDomHome />
+    </Provider>
   );
 }
 export default App;
