@@ -1,0 +1,35 @@
+.top-container{
+  display: flex;
+  flex-direction: row;
+  border:2px solid blue;
+  padding-left:20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  height: calc(100vh - 20px);
+  align-items: start;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200px;
+  justify-content: center;
+  background-color: lightblue;
+}
+
+/* .container2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid grey;
+}
+
+.div1 {
+  position: absolute;
+  top: 100px;
+} */
