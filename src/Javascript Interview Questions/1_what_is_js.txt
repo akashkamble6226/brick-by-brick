@@ -1,0 +1,26 @@
+🚀 What is JavaScript?
+
+JavaScript is a high-level, interpreted programming language 
+used to make web pages interactive and dynamic.
+
+high-level -> A high-level language is a programming language that is easy for humans to read and write. (It hides complex machine details (like memory, CPU instructions))
+interpreted programming language -> An interpreted language is a language where code is executed line-by-line at runtime, instead of being compiled all at once beforehand.
+
+                                                                
+🔍 Simple Explanation
+
+HTML → structure
+CSS → styling
+JavaScript → behavior (logic)
+
+👉 Example:
+
+Click a button → something happens
+Form validation
+Fetch data from server
+
+🧠 Key Features
+Dynamic language (no need to declare types)
+Interpreted (runs directly in browser)
+Event-driven (responds to user actions)
+Asynchronous (handles tasks like API calls without blocking UI)

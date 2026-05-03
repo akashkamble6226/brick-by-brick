@@ -1,0 +1,5 @@
+1) Notebook notes
+2) Notes from this folder
+3) basic output based questions
+4) Basic leetcode questions
+5) Intresting Questions
